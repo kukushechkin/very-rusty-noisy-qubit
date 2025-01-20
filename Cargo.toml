@@ -1,0 +1,16 @@
+[package]
+name = "very-rusty-noisy-qubit"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+name = "very_rusty_noisy_qubit"
+
+[dependencies]
+rand = "0.8.5"
+libc = "0.2.169"
+
+[build-dependencies]
+bindgen = "0.71.1"
+cc = "1.2.10"
